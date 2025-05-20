@@ -8,7 +8,9 @@ import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 // Waiting for the DOM to be ready
-jQuery(function () {
+jQuery(function ($) {
+
+  
   console.log("All libraries loaded!");
 
   $('.singer').on('click', function () {
@@ -25,7 +27,7 @@ jQuery(function () {
   /**
    * Countdown Timer
    */
-  const countDownDate = new Date(2025, 4, 15, 22, 0, 0).getTime();
+  const countDownDate = new Date(2025, 7, 28, 12, 0, 0).getTime();
 
   const countdownInterval = setInterval(function () {
     const now = new Date().getTime();
